@@ -1,0 +1,24 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/sebastienray/Documents/SPOTERN/git-front/app"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/sebastienray/Documents/dockawash/ng-demos-master"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"less2css":
+		{
+			"autoCompile": false
+		}
+	}
+}

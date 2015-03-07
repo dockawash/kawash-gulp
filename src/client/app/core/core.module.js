@@ -12,7 +12,14 @@
             'blocks.router',
             /* 3rd-party modules */
             'ui.router',
-            'ngplus'
+            'ngplus',
+            'ipCookie',
+            'pascalprecht.translate',
+            'angularFileUpload',
+            'ngTagsInput',
+            'directives.clamp',
+            'wu.masonry',
+            'LocalStorageModule'
         ]);
 
 })();

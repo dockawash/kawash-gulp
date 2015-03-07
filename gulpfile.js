@@ -23,6 +23,19 @@ gulp.task('vet', function() {
         .pipe($.jshint.reporter('fail'));
 });
 
+gulp.task('annotate', ['clean'], function () {
+    log('Annotating AngularJS dependencies');
+    var source = [].concat(config.js);
+    return gulp
+        .src(source)
+        .pipe($.ngAnnotate({
+            remove: true,
+            add: true,
+            single_quotes: true
+        }))
+        .pipe(gulp.dest('./annotate/'));
+});
+
 gulp.task('styles', ['clean-styles'], function() {
     log('Compiling Less --> CSS');
 
@@ -52,7 +65,7 @@ gulp.task('images', ['clean-images'], function() {
 });
 
 gulp.task('clean', function(done) {
-    var delconfig = [].concat(config.build, config.temp);
+    var delconfig = [].concat(config.build, config.temp, './annotate/');
     log('Cleaning: ' + $.util.colors.blue(delconfig));
     del(delconfig, done);
 });
@@ -163,6 +176,8 @@ gulp.task('build-specs', ['templatecache'], function() {
         .pipe(gulp.dest(config.client));
 });
 
+// Remove testing from optimize in ini
+// gulp.task('optimize', ['inject', 'test'], function() {
 gulp.task('optimize', ['inject', 'test'], function() {
     log('Optimizing the javascript, css, html');
 

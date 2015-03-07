@@ -1,0 +1,650 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ano",
+				"ngAnnotate"
+			],
+			[
+				"ng",
+				"ngfactory	angular.factory"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"rgb",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"to",
+				"toggleSpot"
+			],
+			[
+				"Menu",
+				"MenuStatus"
+			],
+			[
+				"na",
+				"nav-boutons"
+			],
+			[
+				"$timeou",
+				"$timeout	AngularJS"
+			],
+			[
+				"$ro",
+				"$root"
+			],
+			[
+				"dis",
+				"displayMode"
+			],
+			[
+				"ba",
+				"barW3"
+			],
+			[
+				"us",
+				"usrW"
+			],
+			[
+				"usr",
+				"usrD1"
+			],
+			[
+				"bar",
+				"barW"
+			],
+			[
+				"$root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"toggle",
+				"toggleParams"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"txt",
+				"txt-bleu"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"font-museo-",
+				"font-museo-500"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"box",
+				"box-title"
+			],
+			[
+				"di",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 398.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"fav",
+				"Favorite Files: Open File(s)"
+			],
+			[
+				"form",
+				"Format CSS: Expanded (Break Selectors)"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 599.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/languages",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts/services",
+		"/Users/sebastienray/Documents/dockawash/ng-demos-master/ng-1.3 playground",
+		"/Users/sebastienray/Documents/dockawash/ng-demos-master/ng-1.3 playground/src/client",
+		"/Users/sebastienray/Documents/dockawash/ng-demos-master/ng-1.3 playground/src/client/app",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core"
+	],
+	"file_history":
+	[
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/gulpfile.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/gulp.config.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/config.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/authentication.js",
+		"/Users/sebastienray/Documents/dockawash/ng-demos-master/ng-1.3 playground/gulp.config.json",
+		"/Users/sebastienray/Documents/dockawash/ng-demos-master/ng-1.3 playground/gulpfile.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/build/core/config.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/data/spoternapi.js",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/data/datacontext.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/languages-json.js",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/Pane Resizer/Default (OSX).sublime-keymap",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/Pane Resizer.sublime-settings",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/Pane Resizer/Pane Resizer.sublime-settings",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/bower.json",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts/services/services.js",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts/main.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/.jscsrc",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/common.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/authHttp.js",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/angular.module.sublime-snippet",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/angular.controller.sublime-snippet",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/angular.directive.sublime-snippet",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/angular.factory.sublime-snippet",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/.jshintrc",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-angular/src/client/app/core/config.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/index.html",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/data/spotern.js",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/Minifier/Minifier.sublime-settings",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/core.module.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/data/data.module.js",
+		"/Users/sebastienray/Documents/dockawash/AngularForMVC/AngularForMVC/App_Start/BundleConfig.cs",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/styles/styles.less",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/dashboard/dashboard.html",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/bower_components/angular-clamp/ng-clamp.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/bower_components/angular-clamp/.bower.json",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/spotern.js",
+		"/Users/sebastienray/Documents/dockawash/SublimeText - Helper.md",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/bower_components/ng-file-upload/bower.json",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/index.html",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/bower_components/ng-file-upload/README.md",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/core/dataservice.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-angular/src/client/app/data/datacontext.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-angular/src/client/app/core/core.module.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-angular/src/client/app/core/common.js",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/layout/shell.html",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/layout/sidebar.html",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/app/layout/ht-top-nav.html",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/styles/styles.old.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/spotern.sublime3-project.sublime-project",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/Less2Css/less2css.sublime-settings",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/kawash-gulp.sublime-project",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/less2css.sublime-settings",
+		"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src/client/styles/styles.old.css",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/single.php",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/archive.php",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/less/iveco.less",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/listing-blog.php",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/header.php",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/less/mod-texte.less",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/page.php",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/header-image.php",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-parent/theme_config/theme_includes/THEME_HEADER_CONTENT.php",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/header-map.php",
+		"/Users/sebastienray/Documents/IVECO/http/sftp-config.json",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/css/iveco.css",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/less/editor-styles.less",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-parent/style.css",
+		"/Users/sebastienray/Documents/IVECO/iveco.sublime3-project.sublime-project",
+		"/Users/sebastienray/Documents/IVECO/iveco.sublime3-project.sublime-workspace",
+		"/Users/sebastienray/Documents/IVECO/http/autotrader-iveco/languages/fr_FR.po",
+		"/Users/sebastienray/Downloads/fr_FR.po",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/sebastienray/.Trash/fr_FR.po",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-home.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/barre-recherche.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts/controllers/controller-search.js",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/styles.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/styles.css",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/params-barre.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/params-details.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/main-home.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/barre-connected.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/tools.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts/controllers/params-main.js",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/main-home.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/user-private-profil.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/user-profil.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-collection.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-search-results.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-spot-media.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-spot-tag.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-spot.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-user-profil.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-wanted.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-login.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-test.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-activate.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/view-home.old.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/params-barre.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/params-details.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts/controllers/params-barre.js",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/details-mesparams.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/modules.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/mod-block.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/layout.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/barre-anonyme.html",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/mod-texte.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/themes.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/mod-color.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/barre-principale.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/mod-widgets.less",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/User/CSS Format.sublime-settings",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/CSS Format/CSS Format.sublime-settings",
+		"/Users/sebastienray/Library/Application Support/Sublime Text 3/Packages/CSScomb/Default.sublime-keymap",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/scripts/controllers/controller-user.js",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/states.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/barre-recherche.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/barre-spot-creation.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/box.less",
+		"/Users/sebastienray/Documents/SPOTERN/styles-docs/module - formulaire.md",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/less/mod-form.less",
+		"/Users/sebastienray/Documents/SPOTERN/git-front/app/views/box-spot-edit-media.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"/Users/sebastienray/Documents/dockawash/MonGIT/kawash-gulp/src",
+			"/Users/sebastienray/Documents/IVECO/http/autotrader-parent,*.php",
+			"/Users/sebastienray/Documents/IVECO/http/autotrader-parent,*.css",
+			"/Users/sebastienray/Documents/IVECO/http/autotrader-parent,*.less",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app,*.less",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app,*.html",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app,[*.js|*.html]",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app,(*.js|*.html)",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app,*.js",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app,*.less",
+			"/Users/sebastienray/Documents/IVECO/http/autotrader-parent,*.php",
+			"/Users/sebastienray/Documents/IVECO/http/autotrader-parent,.php",
+			"/Users/sebastienray/Documents/IVECO/http/autotrader-parent",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/.less",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles/*.less",
+			"/Users/sebastienray/Documents/SPOTERN/git-front/app/styles"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"paths",
+			"ngAnnotate",
+			", ",
+			"===",
+			"\"",
+			"language_enUS",
+			"\"",
+			"auth",
+			"\"",
+			"quotmark",
+			"authHttp",
+			"ngAnnotate",
+			"anno",
+			"authentication",
+			"'",
+			"logger",
+			"log(",
+			"Authentication",
+			"'",
+			"factory",
+			"function(",
+			"function(){",
+			"		auth.",
+			"auth.",
+			"factory",
+			"submenu-1",
+			"header_title",
+			"dailymotion",
+			"youtube",
+			"$header_title",
+			"dropdown_sub.png",
+			"caption",
+			"open-sans",
+			"open",
+			".open-sans",
+			"@media",
+			"@",
+			"@media",
+			"media",
+			"msgid \"",
+			"tfuse",
+			"params-main",
+			", .nav-boutons",
+			"4",
+			"3",
+			"nav-spot",
+			"<div class=\"mask-blanc\" ng-click=\"toggleParams()\"></div>",
+			"<div class=\"mask-blanc\"",
+			"mask-bl",
+			"Nav",
+			"ng-click=\"toggleMaskBlanc()\"",
+			"ng-style=\"styleNavGrid\"",
+			"<div class=\"main-content\" ng-style=\"styleMainContent\">",
+			"styleMainContent",
+			"Navi",
+			"Navit",
+			"Navigation.MenuActiv",
+			"501",
+			"45s",
+			".3s",
+			"451",
+			"DetailName",
+			"detailName",
+			"DetailName",
+			" )",
+			"$root.",
+			"<span class=\"\">{",
+			"<span class=\"\">",
+			"		.b-icon-24;\n",
+			"grid_tablet",
+			"<div class=\"grid_",
+			"b-left ",
+			"// ",
+			"item-create",
+			"placeh",
+			"txt-cases",
+			"@colors-names",
+			"@import (reference) url('../",
+			"@import (reference) url('../i",
+			"@import (reference) url('../",
+			"@import (reference) url('..",
+			"@import (reference) url('../",
+			"@import (reference) url('..",
+			"@import (reference) url('../",
+			"@import (reference) url('../icons",
+			"@import url('./views/",
+			"@import",
+			"exit",
+			"add_shortcode",
+			"btn btn_search",
+			"type=\"submit\"",
+			"22px",
+			"40px",
+			"60px",
+			"colors-names",
+			"colors",
+			"names",
+			" ",
+			",",
+			"names",
+			"weights",
+			"weight",
+			"line-height",
+			"font-family:",
+			"'PT Serif Caption'",
+			"font-family:",
+			"font-family: 'Cabin'",
+			"font-family",
+			"<span>{{spot.",
+			"<span>{{newspot.",
+			"tag",
+			"tags",
+			"activa",
+			"logo",
+			"<div class=\"form-label\">&nbsp;</div>",
+			"bloc-slide",
+			"<div class=\"ligne-error\"",
+			"<input type=\"",
+			"<label for=\"",
+			"//",
+			"class=\"txt-lien\" ",
+			"left",
+			"field-max-w field-error",
+			"bloc-slide",
+			".form-login{",
+			".form-login {",
+			"/*******************************************************************************",
+			"icon-logo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"authentication",
+			"<div class=\"mask-blanc\" ng-class=\"{actif: $root.ContentMaskActif}\" ng-click=\"toggleParams()\" ng-show=\"$root.ContentMask\"></div>",
+			"ng-click=\"toggleParams()\"",
+			"<div class=\"main-content\">",
+			"@import url('./"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 198.0
+	},
+	"project": "kawash-gulp.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/IVECO/iveco.sublime3-project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

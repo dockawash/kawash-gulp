@@ -1,24 +1,24 @@
 {
     "excludeFiles": ["node_modules/**", "bower_components/**"],
 
-    "requireCurlyBraces": [
-        "if",
-        "else",
-        "for",
-        "while",
-        "do",
-        "try",
-        "catch"
-    ],
+//    "requireCurlyBraces": [
+//        "if",
+//        "else",
+//        "for",
+//        "while",
+//        "do",
+//        "try",
+//        "catch"
+//    ],
     "requireOperatorBeforeLineBreak": true,
-    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    // "requireCamelCaseOrUpperCaseIdentifiers": true,
     "maximumLineLength": {
-      "value": 100,
+      "value": 500,
       "allowComments": true,
       "allowRegex": true
     },
     "validateIndentation": 4,
-    "validateQuoteMarks": "'",
+//    "validateQuoteMarks": "'",
 
     "disallowMultipleLineStrings": true,
     "disallowMixedSpacesAndTabs": true,
@@ -26,17 +26,17 @@
     "disallowSpaceAfterPrefixUnaryOperators": true,
     "disallowMultipleVarDecl": null,
 
-    "requireSpaceAfterKeywords": [
-      "if",
-      "else",
-      "for",
-      "while",
-      "do",
-      "switch",
-      "return",
-      "try",
-      "catch"
-    ],
+   "requireSpaceAfterKeywords": [
+     "if",
+     "else",
+     "for",
+     "while",
+     "do",
+     "switch",
+     "return",
+     "try",
+     "catch"
+   ],
     "requireSpaceBeforeBinaryOperators": [
         "=", "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", ">>>=",
         "&=", "|=", "^=", "+=",
