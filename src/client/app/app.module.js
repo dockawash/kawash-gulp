@@ -5,6 +5,7 @@
     angular.module('app', [
         /* Shared modules */
         'app.core',
+        'app.data',
         'app.widgets',
 
         /* Feature areas */

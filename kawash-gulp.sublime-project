@@ -3,11 +3,15 @@
 	[
 		{
 			"follow_symlinks": true,
+			"path": "/Users/sebastienray/Documents/dockawash/MonGIT/cc-bmean"
+		},
+		{
+			"follow_symlinks": true,
 			"path": "/Users/sebastienray/Documents/SPOTERN/git-front/app"
 		},
 		{
 			"follow_symlinks": true,
-			"path": "/Users/sebastienray/Documents/dockawash/ng-demos-master"
+			"path": "/Users/sebastienray/Documents/dockawash/breeze.js.samples-master/no-server/edmunds"
 		},
 		{
 			"follow_symlinks": true,

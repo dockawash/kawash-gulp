@@ -167,16 +167,16 @@
         api: API_DEF
     };
 
-    core.value('config', config);
+    core.constant('config', config);
 
     core.config(configure);
 
-    configure.$inject = ['$logProvider', '$routeProvider', 'routehelperConfigProvider',
-        'exceptionConfigProvider', 'toastr', '$translateProvider', '$locationProvider'];
+    configure.$inject = ['$logProvider', 'routerHelperProvider',
+        'exceptionHandlerProvider', 'toastr', '$translateProvider', '$locationProvider'];
 
     /* @ngInject */
-    function configure ($logProvider, $routeProvider, routehelperConfigProvider,
-                        exceptionConfigProvider, toastr, $translateProvider, $locationProvider) {
+    function configure ($logProvider, routerHelperProvider,
+                        exceptionHandlerProvider, toastr, $translateProvider, $locationProvider) {
 
         configureLocation();
         configureToastr();
@@ -202,21 +202,23 @@
         }
 
         function configureExceptions() {
-            exceptionConfigProvider.config.appErrorPrefix = config.appErrorPrefix;
+            exceptionHandlerProvider.config.appErrorPrefix = config.appErrorPrefix;
         }
 
         function configureRouting() {
-            var routeCfg = routehelperConfigProvider;
-            routeCfg.config.$routeProvider = $routeProvider;
-            routeCfg.config.docTitle = 'SPOTERN';
-            routeCfg.config.resolveAlways = { /* @ngInject */
-                ready: ['dataservice', function(dataservice) {
-                    return dataservice.ready();
-                }]
-//                ready: ['datacontext', function (datacontext) {
-//                    return datacontext.ready();
-//                }]
+            var resolveAlways = {
+                ready: ready
             };
+
+            ready.$inject = ['dataservice'];
+            function ready(dataservice) {
+                return dataservice.ready();
+            }
+
+            routerHelperProvider.configure({
+                docTitle: 'Gulp: ',
+                resolveAlways: resolveAlways
+            });
         }
 
         function configureTranslation() {
