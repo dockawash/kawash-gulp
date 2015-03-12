@@ -9,29 +9,42 @@
 
     function emFactory(breezeConfig, model, config, common) {
         var breeze = breezeConfig.breeze;
+        var logger = common.logger;
         var serviceName = config.api.APIURL;
+        var resource;
 
         var jsonResultsAdapter = new breeze.JsonResultsAdapter({
-            name: 'spotern',
+            name: 'jsonApiAdapter',
             extractResults: function (data) {
-                var results = data.results;
-                // console.log('results', results);
-                return results.result.spots;
+                console.log('jsonExtractResults', data);
+                resource = data.httpResponse.config.url.replace(serviceName+'/','');
+                return extractJsonResults(data, resource);
             },
             visitNode: function (node, parseContext, nodeContext) {
-                // format timestamp to date
-                if(node.date && common.isNumber(node.date)) node.date = new Date(node.date*1000);
+                // console.log('jsonvisitNode', node, nodeContext);
 
-                console.log('node', node, parseContext, nodeContext);
-                // return { entityType: 'HomeSpot' }; // Using toType(entity)
-                return;
+                // Set entityType for Spots
+                if(   (nodeContext.nodeType=='navProp' || nodeContext.nodeType=='navPropItem')
+                    && nodeContext.navigationProperty.entityType.shortName) {
+                    var meta = parseContext.entityManager.metadataStore;
+                    var typeName = nodeContext.navigationProperty.entityType.shortName;
+                    var type = typeName && meta.getEntityType(typeName, true);
+                    var result = node;
+                    if (type) {
+                        result.entityType = type;
+                        // Format timestamp to date
+                        if(result.date && common.isNumber(result.date)) result.date = new Date(result.date*1000);
+                    };
+                    // console.log('result', result);
+                    return result;
+                }
             }
         });
 
         var dataService = new breeze.DataService({
             serviceName: serviceName,
             hasServerMetadata: false,
-            useJsonp: true,
+            // useJsonp: true,
             jsonResultsAdapter: jsonResultsAdapter
         });
 
@@ -44,5 +57,23 @@
         };
 
         return provider;
+
+        function extractJsonResults(data, resource) {
+            if (!data.results.status) {
+                // console.log('['+data.results.error+']', data.results);
+                logger.error('['+data.results.error+'] '+data.results.message, data);
+                return {};
+            }
+            var results;
+            switch(resource) {
+                // case 'spotHome':
+                //     results = data.results.result.spots;
+                //     break;
+                default:
+                    results = data.results.result
+            }
+            return results;
+        }
+
     }
 })();

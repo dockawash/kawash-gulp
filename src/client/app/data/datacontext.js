@@ -17,7 +17,7 @@
         var manager = emFactory.manager;
         var isPrimed = false;
         var primePromise;
-        var repoNames = ['homespot'];
+        var repoNames = ['homespot', 'session'];
         var $q = common.$q;
 
         var service = {

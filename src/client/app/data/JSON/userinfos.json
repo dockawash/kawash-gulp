@@ -1,0 +1,43 @@
+{
+    "status": true,
+    "result": {
+        "userID": 65,
+        "email": "ray.sebastien@gmail.com",
+        "username": "sebastienray",
+        "firstname": "Ray",
+        "lastname": "Kawash",
+        "biography": "hello",
+        "localisation": "France",
+        "pinterestPage": "",
+        "twitterPage": "",
+        "facebookPage": "",
+        "birthdate": "1972-05-18",
+        "mobilePhone": null,
+        "phone": null,
+        "address": "11, rue martel\n75010 Paris",
+        "spots": 0,
+        "collections": 0,
+        "wants": 1,
+        "follower": 0,
+        "popularity": {
+            "all": 80.639597211269,
+            "delta": -100
+        },
+        "credibility": {
+            "all": 16.015786375488,
+            "delta": -2.936187411772
+        },
+        "balance": 0,
+        "notifications": 0,
+        "avatarUrl": "http://api.spotern.com/images/users/avatars/w60/65_8abeba186a9585bf03972df593287e7d.jpg",
+        "avatarProfilUrl": "http://api.spotern.com/images/users/avatars/w120/65_8abeba186a9585bf03972df593287e7d.jpg",
+        "notifyNewSell": false,
+        "notifyWanted": true,
+        "notifySpot": false,
+        "newsletterSpotern": false,
+        "newsletterPartners": false,
+        "newsletterAccount": false,
+        "newsletterWeekly": false,
+        "coverUrl": "http://api.spotern.com/images/users/covers/w1024/65_8abeba186a9585bf03972df593287e7d.jpg"
+    }
+}

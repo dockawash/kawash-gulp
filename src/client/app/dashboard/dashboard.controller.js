@@ -18,7 +18,8 @@
         function activate() {
             var promises = [
                 getCustomers(),
-                getHomeSpots()
+                getHomeSpots(),
+                getSession()
             ];
             return $q.all(promises).then(function() {
                 logger.info('Activated Dashboard');
@@ -34,9 +35,15 @@
         }
 
         function getHomeSpots() {
-            return datacontext.homespot.getHomeSpots().then(function(data){
+            return datacontext.homespot.getHomeSpots().then(function(data) {
                 console.log('getHomeSpots', data);
             })
+        }
+
+        function getSession() {
+            return datacontext.session.getSessionFromEmail().then(function(data) {
+                console.log('getSession', data);
+            });
         }
 
         function gotoCustomer(c) {

@@ -32,7 +32,6 @@
             }
 
             function getHomeSpots(forceRemote) {
-                console.log('forceRemote', forceRemote, base.zStorage.areItemsLoaded('homespot'));
                 var spots;
                 if (base.zStorage.areItemsLoaded('homespot') && !forceRemote) {
                     spots = base.getAllLocal('spotHome', entityName);
@@ -43,7 +42,7 @@
                     .from('spotHome')
                     .withParameters({
                         $method: 'POST',
-                        // $encoding: 'JSON', // set in dataService
+                        $encoding: 'JSON',
                         $data: {
                             start: 0,
                             language: 'fr'

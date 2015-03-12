@@ -21,7 +21,6 @@
         return service;
 
         function configureAjaxForBreeze() {
-            console.log('configureAjaxForBreeze');
             // Do not validate when we attach a newly created entity to an EntityManager.
             // We could also set this per entityManager
             new breeze.ValidationOptions({validateOnAttach: false}).setAsDefault();
@@ -30,7 +29,7 @@
             breeze.ajaxpost(ajaxAdapter); // Allow POST in params
         }
     }
-/*
+
     configure.$inject = ['config', 'zDirectivesConfigProvider', 'zStorageConfigProvider'];
 
     function configure(config, zDir, zStore) {
@@ -77,5 +76,4 @@
             //#endregion
         }
     }
-*/
 })();
