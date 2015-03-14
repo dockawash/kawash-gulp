@@ -1,0 +1,32 @@
+<section id="home-view" class="mainbar" ng-controller="HomeGrid as vm">
+    <section class="matter">
+        <div class="container-fluid">
+            <div>
+                <button class="btn btn-info"
+                        ng-click="vm.cleanHomeSpot();">
+                    <i class="fa fa-trash-o"></i>Clean Up
+                </button>
+                <button class="btn btn-info"
+                        ng-click="vm.getSessionFromEmail();">
+                    <i class="fa fa-sign-in"></i>Login
+                </button>
+            </div>
+            <div class="widget wgreen">
+                <div data-ht-widget-header title="{{vm.title}}"></div>
+                <div class="widget-content user">
+                    <div>
+                        <label>Email</label>
+                        <input data-ng-model="vm.session.email"
+                               placeholder="email" data-z-validate />
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password"
+                               data-ng-model="vm.session.password"
+                               placeholder="password" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

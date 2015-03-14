@@ -1,11 +1,11 @@
 /* global breeze:false */
-(function() {
+(function () {
     'use strict';
 
     angular
         .module('app.core')
         .factory('breeze.config', breezeConfig);
-        // .config(configure);
+    // .config(configure);
 
     breezeConfig.$inject = ['breeze', '$http'];
 
@@ -23,9 +23,11 @@
         function configureAjaxForBreeze() {
             // Do not validate when we attach a newly created entity to an EntityManager.
             // We could also set this per entityManager
-            new breeze.ValidationOptions({validateOnAttach: false}).setAsDefault();
+            new breeze.ValidationOptions({
+                validateOnAttach: false
+            }).setAsDefault();
             var ajaxAdapter = breeze.config.initializeAdapterInstance('ajax', 'angular');
-                ajaxAdapter.setHttp($http); // use the $http instance that Angular injected into your app.
+            ajaxAdapter.setHttp($http); // use the $http instance that Angular injected into your app.
             breeze.ajaxpost(ajaxAdapter); // Allow POST in params
         }
     }

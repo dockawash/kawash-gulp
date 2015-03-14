@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular
@@ -11,9 +11,8 @@
     function model(breeze, modelMetadata) {
         // Set the entityType by repo
         var entityNames = {
-            homespot: 'HomeSpot',
-            session: 'Session',
-            user: 'User'
+            spot: 'Spot',
+            session: 'Session'
         };
 
         var service = {

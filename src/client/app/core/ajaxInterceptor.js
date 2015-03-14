@@ -1,4 +1,5 @@
-(function() {
+/* jshint -W101 */
+(function () {
     'use strict';
 
     angular
@@ -10,7 +11,7 @@
 
     /* @ngInject */
     function ajaxInterceptor(common, config) {
-        var $q = common.$q;
+        // var $q = common.$q;
 
         var service = {
             request: fnRequest,
@@ -23,27 +24,21 @@
 
         ////////////////
 
-        function fnRequest(pConfig) {
-            var resource = pConfig.url.replace(config.api.APIURL+'/','').replace(/\?(.*?)/,'');
-            // console.log('resource', resource);
-            switch(resource) {
-                case 'auth/user':
-                    // Get token from config
-                    if (config.token)
-                        pConfig.headers = angular.extend( pConfig.headers, { 'X-Spotern-Token': config.token } );
-                    break;
-            }
-            return pConfig;
+        function fnRequest(ajaxConfig) {
+            var resource = ajaxConfig.url.replace(config.api.APIURL + '/', '').replace(/\?(.*?)/, '');
+            // Set the token for auth resource
+            if (resource.indexOf('auth') >= 0 && config.token)
+                ajaxConfig.headers = angular.extend(ajaxConfig.headers, {
+                    'X-Spotern-Token': config.token
+                });
+            return ajaxConfig;
         }
 
-        function fnRequestError(rejection) {
-        }
+        function fnRequestError(rejection) {}
 
-        function fnResponse(response) {
-        }
+        function fnResponse(response) {}
 
-        function fnResponseErro(rejection) {
-        }
+        function fnResponseErro(rejection) {}
     }
 
     configure.$inject = ['$httpProvider'];

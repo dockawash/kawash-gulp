@@ -11,6 +11,7 @@
         /* Feature areas */
         'app.customers',
         'app.dashboard',
+        'app.home',
         'app.layout'
     ]);
 

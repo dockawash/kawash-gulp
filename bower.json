@@ -54,8 +54,6 @@
         "breeze.debug.js",
         "labs/breeze.ajaxpost.js",
         "labs/breeze.angular.js",
-        "labs/breeze.metadata-helper.js",
-        "labs/breeze.saveErrorExtensions.js",
         "labs/breeze.directives.js",
         "labs/breeze.directives.css"
       ]

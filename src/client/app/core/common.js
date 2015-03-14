@@ -20,6 +20,7 @@
             // createSearchThrottle: createSearchThrottle,
             // debouncedThrottle: debouncedThrottle,
             isNumber: isNumber,
+            isType: isType,
             logger: logger, // for accessibility
             // replaceLocationUrlGuidWithId: replaceLocationUrlGuidWithId,
             textContains: textContains
@@ -36,6 +37,10 @@
         function isNumber(val) {
             // negative or positive
             return (/^[-]?\d+$/).test(val);
+        }
+
+        function isType(val) {
+            return angular.element.type(val);
         }
 
         function textContains(text, searchText) {

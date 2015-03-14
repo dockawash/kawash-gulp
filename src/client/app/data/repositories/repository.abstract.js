@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular
@@ -34,12 +34,39 @@
             predicates: predicates,
             setIsPartialTrue: setIsPartialTrue,
             zStorage: zStorage,
-            zStorageWip: zStorageWip
+            zStorageWip: zStorageWip,
+            localAllRepo: {},
+            areItemsLoaded: areItemsLoaded,
+            cleanEntity: cleanEntity
         };
 
         return Ctor;
 
         /* Implementation */
+
+        function areItemsLoaded(local, value) {
+            var self = this;
+            if (value === undefined)
+                return self.zStorage.areItemsLoaded(local);
+            self.localAllRepo[ local ] = true;
+            return self.zStorage.areItemsLoaded(local, value);
+        }
+
+        function cleanEntity(resource, entityName) {
+            var self = this;
+            var resource = 'spotHome';
+            var vals = self.getAllLocal(resource, entityName);
+            angular.forEach(vals, function(val) {
+                val.entityAspect.setDeleted();
+            });
+            angular.forEach(self.localAllRepo, function(val, loc) {
+                self.zStorage.areItemsLoaded(loc, false);
+            });
+            self.localAllRepo = {};
+            // self.zStorage.clear(); // Clean all datas
+            self.zStorage.save();
+            return self.$q.when(vals);
+        }
 
         function getAllLocal(resource, entity, ordering, predicate) {
             return breeze.EntityQuery.from(resource)
@@ -108,7 +135,10 @@
             if (importedEntity) {
                 // Need to re-validate the entity we are re-hydrating
                 importedEntity.entityAspect.validateEntity();
-                wipResult = {entity: importedEntity, key: wipEntityKey};
+                wipResult = {
+                    entity: importedEntity,
+                    key: wipEntityKey
+                };
             } else {
                 self.logger.info('Could not find [' + entityName + '] id in WIP:' + wipEntityKey, null);
             }

@@ -7,11 +7,15 @@
 		},
 		{
 			"follow_symlinks": true,
-			"path": "/Users/sebastienray/Documents/SPOTERN/git-front/app"
+			"path": "/Users/sebastienray/Documents/dockawash/CC.Web/CC.Web/app"
 		},
 		{
 			"follow_symlinks": true,
 			"path": "/Users/sebastienray/Documents/dockawash/breeze.js.samples-master/no-server/edmunds"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/sebastienray/Documents/SPOTERN/git-front/app"
 		},
 		{
 			"follow_symlinks": true,

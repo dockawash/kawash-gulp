@@ -18,12 +18,14 @@
         function activate() {
             var promises = [
                 getCustomers(),
-                getHomeSpots(),
-                getSession()
+                getSession(),
+                // getHomeSpots()
             ];
-            return $q.all(promises).then(function() {
-                logger.info('Activated Dashboard');
-            });
+            return $q.all(promises)
+                .then(getUserSpots)
+                .then(function() {
+                    logger.info('Activated Dashboard');
+                });
         }
 
         function getCustomers() {
@@ -35,14 +37,20 @@
         }
 
         function getHomeSpots() {
-            return datacontext.homespot.getHomeSpots().then(function(data) {
+            return datacontext.spot.getHomeSpots().then(function(data) {
                 console.log('getHomeSpots', data);
-            })
+            });
         }
 
         function getSession() {
             return datacontext.session.getSessionFromEmail().then(function(data) {
                 console.log('getSession', data);
+            });
+        }
+
+        function getUserSpots() {
+            return datacontext.spot.getUserSpots().then(function(data) {
+                console.log('getUserSpots', data);
             });
         }
 
