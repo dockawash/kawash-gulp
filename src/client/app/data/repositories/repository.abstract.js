@@ -54,7 +54,6 @@
 
         function cleanEntity(resource, entityName) {
             var self = this;
-            var resource = 'spotHome';
             var vals = self.getAllLocal(resource, entityName);
             angular.forEach(vals, function(val) {
                 val.entityAspect.setDeleted();

@@ -5,10 +5,13 @@
         .module('app.data')
         .factory('model', model);
 
-    model.$inject = ['breeze', 'model-metadata'];
+    model.$inject = ['breeze', 'model-metadata', 'model-validation'];
 
     /* @ngInject */
-    function model(breeze, modelMetadata) {
+    function model(breeze, modelMetadata, modelValidation) {
+        var nulloDate = new Date(1900, 0, 1);
+        var nullosExist = false;
+
         // Set the entityType by repo
         var entityNames = {
             spot: 'Spot',
@@ -25,7 +28,9 @@
         /////////////
 
         function initialize(metadataStore) {
+            modelValidation.createAndRegister(entityNames);
             modelMetadata.fillMetadataStore(metadataStore);
+            modelValidation.applyValidators(metadataStore);
         }
 
     }

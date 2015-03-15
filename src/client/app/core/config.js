@@ -210,9 +210,9 @@
                 ready: ready
             };
 
-            ready.$inject = ['dataservice'];
-            function ready(dataservice) {
-                return dataservice.ready();
+            ready.$inject = ['datacontext'];
+            function ready(datacontext) {
+                return datacontext.ready();
             }
 
             routerHelperProvider.configure({

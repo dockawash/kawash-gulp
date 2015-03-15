@@ -1,3 +1,7 @@
+/**
+ * Ajax Interceptor
+ * doc: https://docs.angularjs.org/api/ng/service/$http#interceptors
+ */
 /* jshint -W101 */
 (function () {
     'use strict';
@@ -11,13 +15,13 @@
 
     /* @ngInject */
     function ajaxInterceptor(common, config) {
-        // var $q = common.$q;
+        var $q = common.$q;
 
         var service = {
             request: fnRequest,
-            // requestError: fnrequestError,
-            // response: fnresponse,
-            // responseError: fnresponseError
+            // requestError: fnRequestError,
+            // response: fnResponse,
+            // responseError: fnResponseError
         };
 
         return service;
@@ -34,11 +38,30 @@
             return ajaxConfig;
         }
 
-        function fnRequestError(rejection) {}
+        function fnRequestError(rejection) {
+            console.log('fnRequestError', rejection);
+            // do something on error
+            // if (canRecover(rejection)) {
+            //     return responseOrNewPromise
+            // }
+            return $q.reject(rejection);
 
-        function fnResponse(response) {}
+        }
 
-        function fnResponseErro(rejection) {}
+        function fnResponse(response) {
+            console.log('fnResponse', response);
+            // do something on success
+            return response;
+        }
+
+        function fnResponseError(rejection) {
+            console.log('fnResponseError', rejection);
+            // do something on error
+            // if (canRecover(rejection)) {
+            //     return responseOrNewPromise
+            // }
+            return $q.reject(rejection);
+        }
     }
 
     configure.$inject = ['$httpProvider'];

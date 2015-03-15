@@ -116,14 +116,8 @@
             return primePromise;
 
             function loadLookupsFromRemote() {
-                // get lookups and speakers from remote data source, in parallel
-                var promise = $q.all([service.lookup.getAll(), service.speaker.getPartials(true)]);
-                if (!model.useManualMetadata) {
-                    // got metadata from remote service; now extend it
-                    promise = promise.then(function() {
-                        model.extendMetadata(manager.metadataStore);
-                    });
-                }
+                // get spots
+                var promise = $q.all([service.spot.getHomeSpots()]);
                 return promise.then(function() {
                     zStorage.save();
                 });
@@ -131,7 +125,7 @@
 
             function success() {
                 isPrimed = true;
-                common.logger.info('Primed data', service.lookup.cachedData);
+                common.logger.info('Primed data');
             }
         }
 

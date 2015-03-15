@@ -55,7 +55,8 @@
         "labs/breeze.ajaxpost.js",
         "labs/breeze.angular.js",
         "labs/breeze.directives.js",
-        "labs/breeze.directives.css"
+        "labs/breeze.directives.css",
+        "labs/breeze.saveErrorExtensions.js"
       ]
     }
   }

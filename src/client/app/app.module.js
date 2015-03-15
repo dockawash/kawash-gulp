@@ -9,7 +9,7 @@
         'app.widgets',
 
         /* Feature areas */
-        'app.customers',
+        'app.session',
         'app.dashboard',
         'app.home',
         'app.layout'

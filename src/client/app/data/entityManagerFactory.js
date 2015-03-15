@@ -11,6 +11,7 @@
     function emFactory(breezeConfig, model, config, common) {
         var breeze = breezeConfig.breeze;
         var logger = common.logger;
+        var $translate = common.$translate;
         var serviceName = config.api.APIURL;
         var resource;
 
@@ -72,8 +73,11 @@
         function extractJsonResults(data, resource) {
             var results = {};
             if (!data.results.status) {
-                logger.error('[' + data.results.error + '] ' + data.results.message, data);
-                return results;
+                var error = {};
+                error.ref = 'Spotern API';
+                error.error = data.results.error;
+                error.message = data.results.message;
+                throw error;
             }
             switch (resource) {
                 case 'spotHome':
